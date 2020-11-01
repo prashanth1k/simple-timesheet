@@ -5,15 +5,19 @@ Vue.use(VueRouter);
 
 const routes = [
   {
+    path: "/",
+    name: "Root",
+    beforeEnter: (to, from, next) => {
+      // redirect
+      next("/daily");
+    },
+  },
+  {
     path: "/daily",
     name: "Daily",
     component: () => import("../views/Daily.vue"),
   },
-  {
-    path: "/weekly",
-    name: "Weekly",
-    component: () => import("../views/Weekly.vue"),
-  },
+
   {
     path: "/about",
     name: "About",

@@ -7,9 +7,13 @@ import vuetify from "./plugins/vuetify";
 
 Vue.config.productionTip = false;
 
+Vue.use(require("vue-shortkey"));
+
 new Vue({
   router,
   store,
   vuetify,
-  render: h => h(App)
+  render: (h) => {
+    return h(App);
+  },
 }).$mount("#app");

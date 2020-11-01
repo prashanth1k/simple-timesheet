@@ -7,10 +7,10 @@
         coffee. With this app you can -
       </p>
       <ul>
-        <li>Record your time on a daily basis</li>
-        <li>Record time in a week</li>
+        <li>Record your time for a day</li>
         <li>Export your data</li>
       </ul>
+      <br />
       <p>
         Any and all data you entered will stay on your computer - we don't see
         them. You can use this application for free, and not without a care for
