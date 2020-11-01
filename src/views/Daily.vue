@@ -197,6 +197,7 @@ export default {
     generateExportAndDownload(filetype, extn, separator) {
       let strDayTimes = `${filetype};charset=utf-8,Timesheet for Date: ${this.dayDate} \n\rTotal Time: ${this.totalTime} hours \n\rTime Records\n===============================\n`;
       strDayTimes += `Description${separator}Time (Hours)\n===============================\n`;
+      // prettier-ignore
       strDayTimes += this.dayTimes
         .map(element => `${element["desc"]}${separator}${element["time"]}`)
         .join("\n")
