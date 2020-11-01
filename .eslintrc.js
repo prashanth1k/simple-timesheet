@@ -15,7 +15,8 @@ module.exports = {
       {
         endOfLine: "auto",
         trailingComma: "es5",
-        canPrintParamsWithoutParens: "avoid",
+        canPrintParamsWithoutParens: "always",
+        arrowParens: "always",
       },
     ],
   },
